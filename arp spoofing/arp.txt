@@ -1,0 +1,13 @@
+open ettercap
+sniff > unified sniffing (Select any network and press ok)
+Mitm > ARP poisoning > only poison one way
+
+open terminal
+arp -a
+
+open ettercap
+start > start sniffing
+
+open terminal 
+arp -a
+(some mac address would have changed)

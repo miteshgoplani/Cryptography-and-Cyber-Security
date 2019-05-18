@@ -1,0 +1,13 @@
+sudo hping3 192.168.37.56
+
+with --rand-source 0 packets are received
+sudo hping3 -c 10000 --flood --rand-source 192.168.37.56
+
+without --rand-source and 10 packets received
+sudo hping3 -c 10 192.168.37.56
+
+sudo hping3 -c 10 -d 120 192.168.37.56
+
+Sending ICMP packets. By default hping3 sends TCP packets.
+-a addr is the spoofed source address that appears in the packet
+sudo hping3 -1 -c 10 -a 192.168.36.193 192.168.37.56

@@ -1,0 +1,3 @@
+http://gadgetnasha.com/sumit/
+click on start inside fireshark and write "http" in capturing from ens* window
+can also write ftp to check other packets over tcp/udp 

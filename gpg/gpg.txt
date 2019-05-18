@@ -1,0 +1,17 @@
+gpg - GNU Privacy Guard
+
+man gpg
+
+gpg --full-gen-key
+
+gpg -r miteshgoplani@gmail.com -e myfile
+
+gpg -d myfile.gpg 
+or
+gpg -d myfile.gpg >> newfile
+
+
+//Optionals
+gpg --output ~/revocation.crt --gen-revoke miteshgoplani@gmail.com
+
+gpg --list-secret-keys

